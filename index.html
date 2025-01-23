@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I'm Out Button</title>
+        <link rel="stylesheet" href="Resources/CSS/style.css">
+        <script>
+            var myBtn = new Audio();
+            myBtn.src = "C:/Web Design/Practice projects/I'm Out Button/Resources/Sounds/buzzer-227217.mp3";
+            function PlaySound() {
+            myBtn.play();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="sample">
+            <img class="pic" src="Resources/images/R.jpg">
+            <p class="warning">WARNING DO NOT PRESS UNLESS YOU ARE READY TO TAP OUT OF THE CRINGE</p>
+            <img class="pic" src="Resources/images/R.jpg">
+        </div>
+        <div>
+            <input class="myBtn" type="button" value="I'm Out" onclick="PlaySound()">
+        </div>
+    </body>
+</html>
