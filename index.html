@@ -2,15 +2,17 @@
 <html>
     <head>
         <title>I'm Out Button</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Resources/CSS/style.css">
         <script>
             var myBtn = new Audio();
-            myBtn.src = "Resources/Sounds/buzzer-227217.mp3";
+            myBtn.src = "C:/Web Design/Practice projects/I'm Out Button/Resources/Sounds/buzzer-227217.mp3";
             function PlaySound() {
             myBtn.play();
+            }
+            var myBtn2 = new Audio();
+            myBtn2.src = "C:/Web Design/Practice projects/I'm Out Button/Resources/Sounds/Thats Based.mp3";
+            function PlaySound2() {
+            myBtn2.play();
             }
         </script>
     </head>
@@ -22,6 +24,9 @@
         </div>
         <div>
             <input class="myBtn" type="button" value="I'm Out" onclick="PlaySound()">
+        </div>
+        <div>
+            <input class="myBtn2" type="button" value="Based" onclick="PlaySound2()">
         </div>
     </body>
 </html>
